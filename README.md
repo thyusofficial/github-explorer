@@ -17,7 +17,7 @@
 
 This aplication was developed to study concepts of ReactJS. It allows searching and registering repositories with some informations.
 
-<details><summary>Project Layout</summary>
+<details><summary><strong> Project Layout </strong></summary>
   <img src=".github/cover.png" alt="Project cover">
   <img src=".github/dashboard.png" alt="Project dashboard page">
   <img src=".github/repository.png" alt="Project repository page">
