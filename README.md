@@ -17,6 +17,8 @@
 
 This aplication was developed to study concepts of ReactJS. It allows searching and registering repositories with some informations.
 
+An online version of the project can be accessed [here](https://eliasgcf.github.io/github-explorer/) 🖥️
+
 <details><summary><strong> Project Layout </strong></summary>
   <img src=".github/cover.png" alt="Project cover">
   <img src=".github/dashboard.png" alt="Project dashboard page">
