@@ -7,7 +7,7 @@ interface FormProps {
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3a3a3a;
+  color: ${props => props.theme.colors.title};
 
   max-width: 450px;
 
@@ -29,8 +29,9 @@ export const Form = styled.form<FormProps>`
     padding: 0 24px;
     border: 0;
     border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
-    border: 2px solid #fff;
+    background: ${props => props.theme.colors.shape};
+    color: ${props => props.theme.colors.title};
+    border: 2px solid ${props => props.theme.colors.shape};
 
     ${props =>
       props.hasError &&
@@ -40,21 +41,21 @@ export const Form = styled.form<FormProps>`
       `}
 
     &::placeholder {
-      color: #a8a8b3;
+      color: ${props => props.theme.colors.textSecundary};
     }
   }
 
   button {
     width: 210px;
-    background: #04d361;
+    background: ${props => props.theme.colors.button};
     border-radius: 0 5px 5px 0;
     border: 0;
-    color: #fff;
+    color: ${props => props.theme.colors.buttonColor};
     font-weight: bold;
     transition: background 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')};
+      background: ${props => shade(0.2, props.theme.colors.button)};
     }
   }
 `;
@@ -64,7 +65,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
+    background: ${props => props.theme.colors.shape};
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -93,25 +94,25 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: ${props => props.theme.colors.titleSecundary};
       }
 
       p {
         font-size: 18px;
-        color: #a8a8b3;
+        color: ${props => props.theme.colors.textSecundary};
         margin-top: 4px;
       }
     }
 
     svg {
       margin-left: auto;
-      color: #cbcbd6;
+      color: ${props => props.theme.colors.text};
     }
   }
 `;
 
 export const Error = styled.span`
   display: block;
-  color: #c53030;
+  color: ${props => props.theme.colors.error};
   margin-top: 8px;
 `;

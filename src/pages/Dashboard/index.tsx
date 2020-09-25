@@ -3,8 +3,6 @@ import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
-import logoImg from '../../assets/logo.svg';
-
 import { Title, Form, Repositories, Error } from './styles';
 
 interface Repository {
@@ -61,9 +59,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <img src={logoImg} alt="Github explorer logo" />
-      <Title>Explore repositórios no Github.</Title>
-
+      <Title> Explore repositórios no Github.</Title>
       <Form hasError={!!inputError} onSubmit={handleAddRepository}>
         <input
           value={newRepo}
