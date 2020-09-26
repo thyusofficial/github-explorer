@@ -18,6 +18,8 @@ export default createGlobalStyle`
   }
 
   body{
+    transition: background 0.2s;
+
     background:${props =>
       props.theme.colors.background} url(${backgroundImage}) no-repeat 70% top;
   }
